@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Signika:wght@700&display=swap');
+
+*{
+   margin: 0;
+   padding:0;
+}
+
+.insheader {
+   padding: 100px;
+   background-color: rgb(247, 229, 229) !important;
+   h1 {
+      font-weight: 100;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(20, 20, 20) !important;
+      span{
+         font-weight: 900;
+         color: #000 !important;
+      }
+   }
+   .cprt {
+      a {
+         color: rgb(20, 20, 20);
+      }
+   }
+   @media print {
+      display: none;
+   }
+   .instructions {
+      p {
+         line-height: 25px;
+      }
+   }
+}
+
+.button{
+   padding: 50px;
+   .btn-grad {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)}
+   .btn-grad {
+      margin: 10px;
+      padding: 15px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      font-weight: 900;
+      font-size: 25px;
+      color: #000;            
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .btn-grad:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #000;
+      text-decoration: none;
+    }
+   @media print {
+      display: none;
+   }
+}
+
+#invsection {
+   margin-top: 100px;
+   margin-bottom: 50px;
+   @media print {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: repeat(2, 1fr);
+   page-break-after: always;
+   height: 100%;
+   width: 100%;
+   .no1{
+      padding: 0 100px;
+      @media print {
+         padding: 0 50px;
+      }
+      header {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         img {
+            height: 100px !important;
+            width: 100px !important;
+         }
+         h1 {
+            font-size: 50px;
+            font-family: 'Signika', sans-serif;
+         }
+      }
+      nav {
+         margin-top: 0px;
+         p{
+            text-align: center !important;
+            font-size: 12px;
+         }
+      }
+      .name {
+         display: flex;
+         flex-flow: column wrap;
+         div {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            strong {
+               padding-top: 7px !important;
+               font-size: 15px;
+               color: rgb(42, 42, 43);
+            }
+            input {
+               padding: 10px;
+               font-size: 15px;
+               color: black;
+               text-overflow: clip;
+               font-weight: 900;
+               flex-basis: 1;
+               width: 250px;
+               text-align: right !important;
+               border-radius: 5px;
+               @media print {
+                  border: none;
+                  outline: none;
+                  padding: 0;
+               }
+            }
+            .telephon {
+               text-align: left !important;
+            }
+            textarea {
+               padding: 10px;
+               font-size: 12px;
+               height: 170px;
+               width: 250px;
+               color: black;
+               flex-basis: 1;
+               text-overflow: clip;
+               font-weight: 900;
+               text-align: right !important;
+               border-radius: 5px;
+               @media print {
+                  border: none;
+                  outline: none;
+                  padding: 0px;
+               }
+            }
+         }
+      }
+   }
+   .no2{
+      padding: 0 100px;
+      @media print {
+         padding: 0 50px;
+      }
+      header {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         img {
+            height: 100px !important;
+            width: 100px !important;
+         }
+         h1 {
+            font-size: 50px;
+            font-family: 'Signika', sans-serif;
+         }
+      }
+      nav {
+         margin-top: 0px;
+         p{
+            text-align: center !important;
+            font-size: 12px;
+         }
+      }
+      .name {
+         display: flex;
+         flex-flow: column wrap;
+         div {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            strong {
+               padding-top: 7px !important;
+               font-size: 15px;
+               color: rgb(42, 42, 43);
+            }
+            input {
+               flex-basis: 1;
+               padding: 10px;
+               font-size: 15px;
+               color: black;
+               text-overflow: clip;
+               font-weight: 900;
+               width: 250px;
+               text-align: right !important;
+               border-radius: 5px;
+               @media print {
+                  border: none;
+                  outline: none;
+                  padding: 0;
+               }
+            }
+            .telephon {
+               text-align: left !important;
+            }
+            textarea {
+               flex-basis: 1;
+               padding: 10px;
+               font-size: 12px;
+               height: 170px;
+               width: 250px;
+               color: black;
+               text-overflow: clip;
+               font-weight: 900;
+               text-align: right !important;
+               border-radius: 5px;
+               @media print {
+                  border: none;
+                  outline: none;
+                  padding: 0;
+               }
+            }
+         }
+      }
+   }
+}
+
+.alert {
+   p{
+      color: rgb(95, 9, 9);
+   }
+}
+
+.cpyright {
+   padding-top: 20px;
+   font-size: 11px;
+}
