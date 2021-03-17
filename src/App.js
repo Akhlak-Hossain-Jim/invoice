@@ -16,7 +16,7 @@ function Alert({ data }) {
 function App() {
 
   var DATE = new Date();
-  var toDAY = DATE.getDate()+'-0'+(DATE.getMonth()+1)+'-'+DATE.getFullYear();
+  var toDAY = DATE.getDate()+'-'+(DATE.getMonth()+1)+'-'+DATE.getFullYear();
 
   const addComponent = function() {
     var span = document.createElement("span");
@@ -42,11 +42,11 @@ function App() {
 
     var threediv = document.createElement("div");
     threediv.classList.add("name");
-    threediv.innerHTML = '<div><strong>Name:</strong>&nbsp;<input type="text" required></input></div><div><strong>Address:</strong>&nbsp;<textarea type="text" required></textarea></div><div><strong>Phone No:</strong>&nbsp;<input class="telephon" type="tel" defaultValue="+88" required></input></div><div><strong>Transporter:</strong>&nbsp;<input type="text"></input></div><div><strong>Quantity:</strong>&nbsp;<input type="number"></input></div><div><strong>Bill:</strong>&nbsp;<input type="number" required></input></div>';
+    threediv.innerHTML = '<div><strong>Name:</strong>&nbsp;<input type="text" required></input></div><div><strong>Phone No:</strong>&nbsp;<input className="telephon" type="tel" defaultValue="+88" required></input></div><div><strong>Bill:</strong>&nbsp;<input type="number" required></input></div><div><strong>Address:</strong>&nbsp;<textarea type="text" required></textarea></div><div><strong>Transporter:</strong>&nbsp;<input type="text"></input></div><div><strong>Quantity:</strong>&nbsp;<input type="number"></input></div><div><strong>Details:</strong>&nbsp;<textarea type="text" required></textarea></div>';
 
     var cpyrt = document.createElement("div");
     cpyrt.classList.add("cpyright");
-    cpyrt.innerHTML = "created with invoice web app. Need one? https://beta-ahj.web.app/projects";
+    cpyrt.innerHTML = "<p className='cprt'>Created and updated by <a href='http://akhlak-hossain-jim.github.io/' target='_blank' rel='noopener noreferrer'>&copy;&nbsp;<strong><em>Akhlak Hossain Jim</em></strong></a>.</p>";
 
     var driv = document.createElement("div");
     driv.classList.add("no1");
@@ -78,12 +78,12 @@ function App() {
 
     var threediv2 = document.createElement("div");
     threediv2.classList.add("name");
-    threediv2.innerHTML = '<div><strong>Name:</strong>&nbsp;<input type="text" required></input></div><div><strong>Address:</strong>&nbsp;<textarea type="text" required></textarea></div><div><strong>Phone No:</strong>&nbsp;<input class="telephon" type="tel" defaultValue="+88" required></input></div><div><strong>Transporter:</strong>&nbsp;<input type="text"></input></div><div><strong>Quantity:</strong>&nbsp;<input type="number"></input></div><div><strong>Bill:</strong>&nbsp;<input type="number" required></input></div>';
+    threediv2.innerHTML = '<div><strong>Name:</strong>&nbsp;<input type="text" required></input></div><div><strong>Phone No:</strong>&nbsp;<input className="telephon" type="tel" defaultValue="+88" required></input></div><div><strong>Bill:</strong>&nbsp;<input type="number" required></input></div><div><strong>Address:</strong>&nbsp;<textarea type="text" required></textarea></div><div><strong>Transporter:</strong>&nbsp;<input type="text"></input></div><div><strong>Quantity:</strong>&nbsp;<input type="number"></input></div><div><strong>Details:</strong>&nbsp;<textarea type="text" required></textarea></div>';
 
 
     var cpyrt2 = document.createElement("div");
     cpyrt2.classList.add("cpyright");
-    cpyrt2.innerHTML = "created with invoice web app. Need one? https://beta-ahj.web.app/projects";
+    cpyrt2.innerHTML = "<p className='cprt'>Created and updated by <a href='http://akhlak-hossain-jim.github.io/' target='_blank' rel='noopener noreferrer'>&copy;&nbsp;<strong><em>Akhlak Hossain Jim</em></strong></a>.</p>";
 
     var div2 = document.createElement("div");
     div2.classList.add("no2");
@@ -108,10 +108,10 @@ function App() {
       <header className="insheader">
         <h1>This is a &#160;<span>Simple</span>&#160;<span>Online</span> Invoicing web App.</h1>
         <br />
-        <p className="cprt">Created and updated by <a href="http://beta-ahj.web.app" target="_blank" rel="noopener noreferrer">&copy;Akhlak Hossain Jim</a> . Need one? <a href="https://beta-ahj.web.app/projects" target="_blank" rel="noopener noreferrer">https://beta-ahj.web.app/projects</a></p>
+        <p className="cprt">Created and updated by <a href="http://akhlak-hossain-jim.github.io/" target="_blank" rel="noopener noreferrer">&copy;&nbsp;<strong><em>Akhlak Hossain Jim</em></strong></a>.</p>
         <br />
-        <h1><strong>User Guid:</strong></h1>
-        <div className="instructions">
+        <strong className="cprt">View: <a href="https://github.com/Akhlak-Hossain-Jim/invoice/blob/main/README.md" target="_blank" rel="noopener noreferrer">User Guid</a></strong>
+        {/* <div className="instructions">
           <br />
           <p>--- Please put all necessary information in the Boxs bellow. 
             <br />&nbsp;&nbsp;&nbsp;&nbsp;( Transporter box is for the delivery company name )</p>
@@ -121,10 +121,10 @@ function App() {
           <p>------ Setup the page layout as <em>Landscape</em></p>
           <p>------ Hit Save</p>
           <p>-- Then print and reserve as you want.</p>
-        </div>
+        </div> */}
         <br />
         <br />
-        <Alert data="Never refresh the page before Finishing the task (If you do you may need to type all again)" />
+        <Alert data="Never refresh the page before Finishing the task (If you do you may need to type all again." />
       </header>
       <main id="invoiceBox">
         <InvoivePackage />

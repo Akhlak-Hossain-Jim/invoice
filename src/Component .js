@@ -3,7 +3,7 @@ import './style.css';
 import logo from "./logo.png";
 
 var DATE = new Date();
-var toDAY = DATE.getDate()+'-0'+(DATE.getMonth()+1)+'-'+DATE.getFullYear();
+var toDAY = DATE.getDate()+'-'+(DATE.getMonth()+1)+'-'+DATE.getFullYear();
 
 function Invoice() {
   return (
@@ -20,13 +20,14 @@ function Invoice() {
       </nav>
       <div className="name">
         <div><strong>Name:</strong>&nbsp;<input type="text" required></input></div>
-        <div><strong>Address:</strong>&nbsp;<textarea type="text" required></textarea></div>
         <div><strong>Phone No:</strong>&nbsp;<input className="telephon" type="tel" defaultValue="+88" required></input></div>
+        <div><strong>Bill:</strong>&nbsp;<input type="number" required></input></div>
+        <div><strong>Address:</strong>&nbsp;<textarea type="text" required></textarea></div>
         <div><strong>Transporter:</strong>&nbsp;<input type="text"></input></div>
         <div><strong>Quantity:</strong>&nbsp;<input type="number"></input></div>
-        <div><strong>Bill:</strong>&nbsp;<input type="number" required></input></div>
+        <div><strong>Details:</strong>&nbsp;<textarea type="text" required></textarea></div>
       </div>
-      <div className="cpyright">created with invoice web app. Need one? https://beta-ahj.web.app/projects</div>
+      <div className="cpyright"><p className="cprt">Created and updated by <a href="http://akhlak-hossain-jim.github.io/" target="_blank" rel="noopener noreferrer">&copy;&nbsp;<strong><em>Akhlak Hossain Jim</em></strong></a>.</p></div>
     </div>
   );
 }

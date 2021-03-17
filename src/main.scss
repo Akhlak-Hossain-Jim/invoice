@@ -1,3 +1,5 @@
+// ************************** Font Importing ************************** 
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Signika:wght@700&display=swap');
 
 *{
@@ -5,7 +7,10 @@
    padding:0;
 }
 
+// ************************** Header Section ************************** 
+
 .insheader {
+
    padding: 100px;
    background-color: rgb(247, 229, 229) !important;
    h1 {
@@ -19,7 +24,7 @@
    }
    .cprt {
       a {
-         color: rgb(20, 20, 20);
+         color: rgb(33, 114, 114);
       }
    }
    @media print {
@@ -31,6 +36,19 @@
       }
    }
 }
+
+.alert {
+   p{
+      color: rgb(95, 9, 9);
+   }
+}
+
+.cpyright {
+   padding-top: 20px;
+   font-size: 11px;
+}
+
+// ************************** Button ************************** 
 
 .button{
    padding: 50px;
@@ -73,7 +91,11 @@
    page-break-after: always;
    height: 100%;
    width: 100%;
+   @media (max-width:768px) {
+      grid-template-columns: repeat(1, 1fr);
+   }
    .no1{
+      max-width: 450px !important;
       padding: 0 100px;
       @media print {
          padding: 0 50px;
@@ -83,11 +105,11 @@
          justify-content: center;
          align-items: center;
          img {
-            height: 100px !important;
-            width: 100px !important;
+            height: 80px !important;
+            width: 80px !important;
          }
          h1 {
-            font-size: 50px;
+            font-size: 40px;
             font-family: 'Signika', sans-serif;
          }
       }
@@ -95,7 +117,7 @@
          margin-top: 0px;
          p{
             text-align: center !important;
-            font-size: 12px;
+            font-size: 11px;
          }
       }
       .name {
@@ -107,12 +129,12 @@
             justify-content: space-between;
             strong {
                padding-top: 7px !important;
-               font-size: 15px;
+               font-size: 13px;
                color: rgb(42, 42, 43);
             }
             input {
                padding: 10px;
-               font-size: 15px;
+               font-size: 13px;
                color: black;
                text-overflow: clip;
                font-weight: 900;
@@ -150,6 +172,7 @@
       }
    }
    .no2{
+      max-width: 450px !important;
       padding: 0 100px;
       @media print {
          padding: 0 50px;
@@ -159,11 +182,11 @@
          justify-content: center;
          align-items: center;
          img {
-            height: 100px !important;
-            width: 100px !important;
+            height: 80px !important;
+            width: 80px !important;
          }
          h1 {
-            font-size: 50px;
+            font-size: 40px;
             font-family: 'Signika', sans-serif;
          }
       }
@@ -171,7 +194,7 @@
          margin-top: 0px;
          p{
             text-align: center !important;
-            font-size: 12px;
+            font-size: 11px;
          }
       }
       .name {
@@ -183,16 +206,16 @@
             justify-content: space-between;
             strong {
                padding-top: 7px !important;
-               font-size: 15px;
+               font-size: 13px;
                color: rgb(42, 42, 43);
             }
             input {
-               flex-basis: 1;
                padding: 10px;
-               font-size: 15px;
+               font-size: 13px;
                color: black;
                text-overflow: clip;
                font-weight: 900;
+               flex-basis: 1;
                width: 250px;
                text-align: right !important;
                border-radius: 5px;
@@ -206,12 +229,12 @@
                text-align: left !important;
             }
             textarea {
-               flex-basis: 1;
                padding: 10px;
                font-size: 12px;
                height: 170px;
                width: 250px;
                color: black;
+               flex-basis: 1;
                text-overflow: clip;
                font-weight: 900;
                text-align: right !important;
@@ -219,21 +242,10 @@
                @media print {
                   border: none;
                   outline: none;
-                  padding: 0;
+                  padding: 0px;
                }
             }
          }
       }
    }
-}
-
-.alert {
-   p{
-      color: rgb(95, 9, 9);
-   }
-}
-
-.cpyright {
-   padding-top: 20px;
-   font-size: 11px;
 }
