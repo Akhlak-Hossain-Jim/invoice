@@ -15,4 +15,4 @@ It's too easy to install in Google Chrome:
 
 
 ## Issue 
-As it is an only front-end app it wont save any work inherently. Without saving the work exiting the Browser or APP your work will lose.
+As it is an only front-end app it wont save any work inherently. Without saving the work exiting or refreshing the Browser or APP your work will lose.
