@@ -110,7 +110,7 @@ function App() {
         <br />
         <p className="cprt">Created and updated by <a href="http://akhlak-hossain-jim.github.io/" target="_blank" rel="noopener noreferrer">&copy;&nbsp;<strong><em>Akhlak Hossain Jim</em></strong></a>.</p>
         <br />
-        <strong className="cprt">View: <a href="https://github.com/Akhlak-Hossain-Jim/invoice/blob/main/README.md" target="_blank" rel="noopener noreferrer">User Guid</a></strong>
+        <strong className="cprt sticky">View: <a href="https://github.com/Akhlak-Hossain-Jim/invoice/blob/main/README.md" target="_blank" rel="noopener noreferrer">User Guid</a></strong>
         <br />
         <strong className="cprt"><a href="https://github.com/Akhlak-Hossain-Jim/invoice/issues" target="_blank" rel="noopener noreferrer">Report a problem.</a></strong>
         <br />
