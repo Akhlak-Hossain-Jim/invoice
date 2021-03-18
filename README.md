@@ -22,6 +22,7 @@ It's too easy to install in Google Chrome:
    * If you need more (which you will) just click ADD button below the form.
  * Fill up the form one by one (Left to Right)
  * ADD as much form as you need 
+ * ~~exit the window or app~~ Don't you dare do that. Why? Well, nothing you just have to do everything all over again.
  * After You have done enough, Press `Ctrl` + `P`
  * You will see a Print Options Page poped up
  * Must Select Layout Option As "Landscape" 
@@ -31,4 +32,5 @@ It's too easy to install in Google Chrome:
 Now it's your turn to Print
 
 ## Issue 
-As it is an only front-end app it won't save any work inherently. Without saving the work exiting or refreshing the Browser or APP your work will lose.
+ * As it is an only front-end app it won't save any work inherently. 
+ * Without saving the work exiting or refreshing the Browser or App your work will lose.
