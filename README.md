@@ -1,4 +1,4 @@
-# Invoiceing Front-end App
+# Invoicing Front-end App
 [Invoicing](https://invoice-jim.netlify.app/) is a Front-end Web APP dedicated to Shuvro Jaya.
 
 # Quickstart
@@ -8,8 +8,8 @@
 ### In Chrome 
 It's too easy to install in Google Chrome:
 
-  * First go to this [Link](https://invoice-jim.netlify.app/).
-  * Just Click on the Address bar and You can see the Installation option, click on it and you are ready to go.
+  * First, go to this [Link](https://invoice-jim.netlify.app/).
+  * Just click on the Address bar and You can see the Installation option, click on it and you are ready to go.
 
 ## User Guide
 
@@ -40,4 +40,4 @@ Now it's your turn to Print
 
   Want something similar for your small organization?
   
-  Well, just [page](http://m.me/akhlakhossainjim) me with logo and fields you need. I'd be happy to do that (for free).
+  Well, just [page](http://m.me/akhlakhossainjim) me with the logo and fields you need. I'd be happy to do that (for free).
