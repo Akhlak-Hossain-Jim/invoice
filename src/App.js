@@ -111,17 +111,8 @@ function App() {
         <p className="cprt">Created and updated by <a href="http://akhlak-hossain-jim.github.io/" target="_blank" rel="noopener noreferrer">&copy;&nbsp;<strong><em>Akhlak Hossain Jim</em></strong></a>.</p>
         <br />
         <strong className="cprt">View: <a href="https://github.com/Akhlak-Hossain-Jim/invoice/blob/main/README.md" target="_blank" rel="noopener noreferrer">User Guid</a></strong>
-        {/* <div className="instructions">
-          <br />
-          <p>--- Please put all necessary information in the Boxs bellow. 
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;( Transporter box is for the delivery company name )</p>
-            <br />
-          <p>--- After a set is done click the button bellow to add another section</p>
-          <p>--- After intering all information press&#160;<code>Ctrl</code><strong>&nbsp;+&nbsp;</strong><code>p</code></p>
-          <p>------ Setup the page layout as <em>Landscape</em></p>
-          <p>------ Hit Save</p>
-          <p>-- Then print and reserve as you want.</p>
-        </div> */}
+        <br />
+        <strong className="cprt"><a href="https://github.com/Akhlak-Hossain-Jim/invoice/issues" target="_blank" rel="noopener noreferrer">Report a problem.</a></strong>
         <br />
         <br />
         <Alert data="Never refresh the page before Finishing the task (If you do you may need to type all again." />
