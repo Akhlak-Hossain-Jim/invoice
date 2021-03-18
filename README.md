@@ -3,7 +3,7 @@
 
 # Quickstart
 
-## Install
+## Installation
 
 ### In Chrome 
 It's too easy to install in Google Chrome:
