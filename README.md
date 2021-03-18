@@ -32,5 +32,11 @@ It's too easy to install in Google Chrome:
 Now it's your turn to Print
 
 ## Issue 
+
  * As it is an only front-end app it won't save any work inherently. 
  * Without saving the work exiting or refreshing the Browser or App your work will lose.
+
+## Personalization
+
+Want something similar for your small organization?
+Well, just page me with logo and fields you need. I'd be happy to do that (for free).
