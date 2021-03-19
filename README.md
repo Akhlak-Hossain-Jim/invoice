@@ -16,7 +16,7 @@ It's too easy to install in Google Chrome:
  * You will Find Your new Installed App on your Screen or
    * Pressing Windows Button (On Windows Machine)
    * Pressing Show Applications (On Linux Machine)
-   * Sorry I never used an Apple Machine. So I can say.
+   * Sorry I never used an Apple Machine. So buy me one, I'll tell you then.
  * Open your app
    * You will see two Invoicing forms inherently
    * If you need more (which you will) just click ADD button below the form.
