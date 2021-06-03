@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import styled from "styled-components";
 import InvoivePackage from "./Component ";
 
 window.addEventListener("load", (event) => {
@@ -26,7 +26,7 @@ function App() {
   const [n, setn] = useState(1);
 
   return (
-    <div className="App">
+    <AppC>
       <header className="insheader">
         <h1>
           This is a &#160;<span>Simple</span>&#160;<span>Online</span> Invoicing
@@ -80,8 +80,85 @@ function App() {
           Add
         </button>
       </div>
-    </div>
+    </AppC>
   );
 }
 
 export default App;
+
+const AppC = styled.div`
+  .insheader {
+    padding: 100px;
+    background-color: rgb(247, 229, 229) !important;
+    h1 {
+      font-weight: 100;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(20, 20, 20) !important;
+      span {
+        font-weight: 900;
+        color: #000 !important;
+      }
+    }
+    .cprt {
+      a {
+        color: rgb(33, 114, 114);
+      }
+      &.sticky {
+        position: sticky;
+        top: 10px;
+      }
+    }
+    @media print {
+      display: none;
+    }
+    .instructions {
+      p {
+        line-height: 25px;
+      }
+    }
+  }
+  .alert {
+    p {
+      color: rgb(95, 9, 9);
+    }
+  }
+
+  .cpyright {
+    padding-top: 20px;
+    font-size: 11px;
+  }
+  .button {
+    padding: 50px;
+    .btn-grad {
+      background-image: linear-gradient(
+        to right,
+        #ff6e7f 0%,
+        #bfe9ff 51%,
+        #ff6e7f 100%
+      );
+    }
+    .btn-grad {
+      margin: 10px;
+      padding: 15px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      font-weight: 900;
+      font-size: 25px;
+      color: #000;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .btn-grad:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #000;
+      text-decoration: none;
+    }
+    @media print {
+      display: none;
+    }
+  }
+`;

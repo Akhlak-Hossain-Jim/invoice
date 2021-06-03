@@ -34,7 +34,7 @@ Now it's your turn to Print or anything you need to do.
 
 ## Issue 
 
- * As it is an only front-end app it won't save any work inherently. 
+ * As it is an only front-end app it won't save any of your work inherently. 
  * Without saving the work exiting or refreshing the Browser or App your work will lose.
 
 ## Personalization
