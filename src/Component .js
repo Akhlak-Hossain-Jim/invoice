@@ -19,7 +19,7 @@ function Invoice() {
         <p>
           Shop # 15 and #21 , Doreen Shopping Center, Plot # 04, Rupnagar
           Abashik Main Road, Mirpur Dhaka, Bangladesh <br />
-          Facebook/ShuvroJaya Call:01716-126231
+          Facebook/ShuvroJaya Call:01730-203990
         </p>
       </nav>
       <div className="name">
