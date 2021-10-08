@@ -87,9 +87,13 @@ function App() {
 export default App;
 
 const AppC = styled.div`
+  background-color: #e4ebf5;
+  @media print {
+    background-color: transparent;
+  }
   .insheader {
     padding: 100px;
-    background-color: rgb(247, 229, 229) !important;
+    background-color: rgba(247, 229, 229, 0.6) !important;
     h1 {
       font-weight: 100;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
