@@ -1,7 +1,6 @@
 import React from "react";
-// import './style.css';
 import styled from "styled-components";
-import logo from "./logo.png";
+// import logo from "./logo.png";
 
 var DATE = new Date();
 var toDAY =
@@ -12,7 +11,7 @@ function Invoice() {
     <div className="no1">
       <p>Date: &nbsp;{toDAY}</p>
       <header>
-        <img src={logo} alt=" Company Logo" />
+        <img src="/b_logo.webp" alt=" Company Logo" />
         <h1>Shuvro Jaya</h1>
       </header>
       <nav>
@@ -22,7 +21,7 @@ function Invoice() {
           Facebook/ShuvroJaya Call:01730-203990
         </p>
       </nav>
-      <div className="name">
+      <div className="form">
         <div>
           <strong>Name:</strong>&nbsp;<input type="text" required></input>
         </div>
@@ -89,6 +88,8 @@ const Container = styled.section`
     @media print {
       margin-top: 0;
       margin-bottom: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
     display: grid;
     grid-gap: 20px;
@@ -98,6 +99,9 @@ const Container = styled.section`
     width: 100%;
     @media (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
+    }
+    @media print {
+      grid-template-columns: 1fr 1fr;
     }
     .no1 {
       max-width: 450px !important;
@@ -125,9 +129,13 @@ const Container = styled.section`
           font-size: 11px;
         }
       }
-      .name {
+      .form {
         display: flex;
         flex-flow: column wrap;
+        gap: 10px;
+        @media print {
+          gap: 0;
+        }
         div {
           display: flex;
           flex-flow: row wrap;
@@ -147,10 +155,21 @@ const Container = styled.section`
             width: 250px;
             text-align: right !important;
             border-radius: 5px;
+            border: none;
+            box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
+              inset -0.2rem -0.2rem 0.5rem #ffffff;
+            background-color: #e4ebf5;
+            &:focus {
+              outline: none;
+              box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7,
+                -0.2rem -0.2rem 0.5rem #ffffff;
+            }
             @media print {
               border: none;
               outline: none;
               padding: 0;
+              background-color: #ffffff;
+              box-shadow: none;
             }
           }
           .telephon {
@@ -167,10 +186,22 @@ const Container = styled.section`
             font-weight: 900;
             text-align: right !important;
             border-radius: 5px;
+            border: none;
+            box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
+              inset -0.2rem -0.2rem 0.5rem #ffffff;
+            background-color: #e4ebf5;
+            &:focus {
+              outline: none;
+              box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7,
+                -0.2rem -0.2rem 0.5rem #ffffff;
+            }
             @media print {
               border: none;
               outline: none;
-              padding: 0px;
+              padding: 0;
+              background-color: #ffffff;
+              box-shadow: none;
+              height: fit-content;
             }
           }
         }
