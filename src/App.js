@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import InvoivePackage from "./Component ";
 
-window.addEventListener("load", (event) => {
-  alert(
-    "Please open with PC or Laptop or Big screens or rotate or phone for better experience"
-  );
-});
+// window.addEventListener("load", (event) => {
+//   alert(
+//     "Please open with PC or Laptop or Big screens or rotate or phone for better experience"
+//   );
+// });
 
 function Alert({ data }) {
   return (
@@ -71,6 +71,7 @@ function App() {
         <br />
         <br />
         <Alert data="Never refresh the page before Finishing the task (If you do you may need to type all again." />
+        <p style={{ fontSize: "13px", margin: "10px 0" }}>App Version: 3.0.0</p>
       </header>
       <main id="invoiceBox">
         <Forms totalNumber={n} />
