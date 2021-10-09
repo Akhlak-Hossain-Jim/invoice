@@ -85,12 +85,6 @@ const Container = styled.section`
   &#invsection {
     margin-top: 100px;
     margin-bottom: 50px;
-    @media print {
-      margin-top: 0;
-      margin-bottom: 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -100,12 +94,24 @@ const Container = styled.section`
     @media (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
     }
+    @media (max-width: 548px) {
+      margin: 0;
+    }
     @media print {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media print {
+      margin-top: 0;
+      margin-bottom: 0;
+      display: grid;
       grid-template-columns: 1fr 1fr;
     }
     .no1 {
       max-width: 450px !important;
       padding: 0 100px;
+      @media (max-width: 548px) {
+        padding: 20px;
+      }
       @media print {
         padding: 0 50px;
       }
@@ -178,7 +184,7 @@ const Container = styled.section`
           textarea {
             padding: 10px;
             font-size: 12px;
-            height: 170px;
+            height: 150px;
             width: 250px;
             color: black;
             flex-basis: 1;
@@ -201,7 +207,7 @@ const Container = styled.section`
               padding: 0;
               background-color: #ffffff;
               box-shadow: none;
-              height: fit-content;
+              /* height: max-content; */
             }
           }
         }

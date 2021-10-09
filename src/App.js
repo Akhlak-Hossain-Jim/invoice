@@ -71,7 +71,7 @@ function App() {
         <br />
         <br />
         <Alert data="Never refresh the page before Finishing the task (If you do you may need to type all again." />
-        <p style={{ fontSize: "13px", margin: "10px 0" }}>App Version: 3.0.0</p>
+        <p style={{ fontSize: "13px", margin: "10px 0" }}>App Version: 3.0.1</p>
       </header>
       <main id="invoiceBox">
         <Forms totalNumber={n} />
